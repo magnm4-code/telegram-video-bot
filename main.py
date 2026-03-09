@@ -38,6 +38,7 @@ def download_video(message):
         'format': 'best',
         'outtmpl': 'downloaded_video.%(ext)s',
         'quiet': True,
+        'cookiefile': 'cookies.txt',
     }
     
     try:
@@ -61,4 +62,5 @@ if __name__ == "__main__":
     
     # Start the bot
     print("Bot is running...")
+
     bot.infinity_polling()
