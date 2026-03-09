@@ -34,7 +34,7 @@ def download_video(message):
 
     bot.reply_to(message, "Processing your link... This might take a moment.")
     
- ydl_opts = {
+ydl_opts = {
         'format': 'best',
         'outtmpl': 'downloaded_video.%(ext)s',
         'quiet': True,
@@ -64,4 +64,5 @@ if __name__ == "__main__":
     print("Bot is running...")
 
     bot.infinity_polling()
+
 
